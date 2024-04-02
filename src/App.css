@@ -1,0 +1,153 @@
+/* App.css */
+/* This file contains styles for the entire application */
+
+/* Resetting default browser styles */
+body {
+  font-family: Arial, sans-serif; /* Setting default font family */
+  background-color: #a9c7d0; /* Setting background color for the body */
+  margin: 0; /* Removing default margin */
+  padding: 0; /* Removing default padding */
+}
+
+/* Container styles */
+.container {
+  max-width: 600px; /* Setting maximum width for the container */
+  margin: 20px auto; /* Centering the container horizontally */
+  background-color: #a89393; /* Setting background color for the container */
+  border-radius: 8px; /* Adding border radius for rounded corners */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adding box shadow for depth effect */
+  padding: 20px; /* Adding padding inside the container */
+}
+
+/* Header styles */
+.header {
+  text-align: center; /* Center-aligning text */
+  font-size: 36px; /* Setting font size */
+  color: #333; /* Setting text color */
+  margin-bottom: 20px; /* Adding margin at the bottom */
+}
+
+/* Task input styles */
+.task-input {
+  display: flex; /* Making the input and button align horizontally */
+  align-items: center; /* Center-aligning items vertically */
+  margin-bottom: 20px; /* Adding margin at the bottom */
+}
+
+.task-input input[type="text"] {
+  flex: 1; /* Making the input field expand to fill available space */
+  padding: 10px; /* Adding padding */
+  border: 2px solid #ccc; /* Adding border */
+  border-radius: 5px; /* Adding border radius */
+  font-size: 16px; /* Setting font size */
+  outline: none; /* Removing outline */
+}
+
+.task-input button {
+  background-color: #4caf50; /* Setting background color */
+  color: white; /* Setting text color */
+  border: none; /* Removing border */
+  padding: 10px 20px; /* Adding padding */
+  border-radius: 5px; /* Adding border radius */
+  cursor: pointer; /* Adding cursor pointer */
+  transition: background-color 0.3s ease; /* Adding transition effect */
+}
+
+.task-input button:hover {
+  background-color: #45a049; /* Changing background color on hover */
+}
+
+/* Task list styles */
+.task-list {
+  list-style-type: none; /* Removing default list style */
+  padding: 0; /* Removing default padding */
+}
+
+.task-list ul {
+  padding: 0; /* Removing default padding */
+}
+
+.task-list li {
+  background-color: #fff; /* Setting background color */
+  padding: 15px; /* Adding padding */
+  margin-bottom: 10px; /* Adding margin at the bottom */
+  border-radius: 5px; /* Adding border radius */
+  display: flex; /* Making list items align horizontally */
+  justify-content: space-between; /* Distributing space evenly between items */
+  align-items: center; /* Center-aligning items vertically */
+  transition: background-color 0.3s ease; /* Adding transition effect */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adding box shadow for depth effect */
+}
+
+.task-list li.completed {
+  background-color: #d3f2da; /* Changing background color for completed tasks */
+}
+
+.task-list .task-text {
+  flex: 1; /* Making the task text expand to fill available space */
+  color: red; /* Setting default text color */
+}
+
+.task-list .task-text.completed-text {
+  color: green; /* Changing text color for completed tasks */
+  text-decoration: line-through; /* Adding line-through for completed tasks */
+}
+
+.task-list button {
+  background-color: #f44336; /* Setting background color */
+  color: white; /* Setting text color */
+  border: none; /* Removing border */
+  padding: 8px 16px; /* Adding padding */
+  border-radius: 5px; /* Adding border radius */
+  cursor: pointer; /* Adding cursor pointer */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Adding transition effect */
+}
+
+.task-list button:hover {
+  background-color: #d32f2f; /* Changing background color on hover */
+  transform: translateY(-2px); /* Adding vertical hover effect */
+}
+
+/* Segment styles */
+.segment {
+  display: flex; /* Making items inside the segment align horizontally */
+  align-items: flex-end; /* Center-aligning items vertically */
+  position:absolute;
+  right:10px;
+  margin-bottom:2px;
+  padding-left:3px;
+
+}
+
+.segment button {
+  margin-left: 10px; 
+  /* Adding margin between buttons */
+}
+
+/* Responsive styles */
+@media screen and (max-width:300px) {
+  .segment{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    flex:1 1 0;
+    /* margin-top:100px; */
+    position: relative;
+    left:1px;
+    /* width:20vh; */
+    /* height:10vh; */
+  }
+
+  .task-input {
+    display: block; /* Making the input and button align horizontally */
+    align-items: center; /* Center-aligning items vertically */
+    margin-bottom: 2vh; /* Adding margin at the bottom */
+  }
+  .ramji{
+    display: block;
+
+  }
+  
+
+  
+}
